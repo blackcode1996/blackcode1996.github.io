@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Home from './Components/Home';
+import Layout from './Components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      Portfolio coming soon....
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        </Route>
+      </Routes>
+    </>
   );
 }
 
