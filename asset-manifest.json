@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.4fd7ddd4.css",
-    "main.js": "/static/js/main.47ec40b7.js",
+    "main.js": "/static/js/main.82219845.js",
     "static/media/wavinghand.gif": "/static/media/wavinghand.071f6042a7fef59e963b.gif",
+    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.2e9b103df389b927b3cf.pdf",
     "index.html": "/index.html",
     "main.4fd7ddd4.css.map": "/static/css/main.4fd7ddd4.css.map",
-    "main.47ec40b7.js.map": "/static/js/main.47ec40b7.js.map"
+    "main.82219845.js.map": "/static/js/main.82219845.js.map"
   },
   "entrypoints": [
     "static/css/main.4fd7ddd4.css",
-    "static/js/main.47ec40b7.js"
+    "static/js/main.82219845.js"
   ]
 }
