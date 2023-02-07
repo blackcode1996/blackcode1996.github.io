@@ -1,37 +1,30 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
   Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
   Heading,
-  useColorMode,
-  Center,
-  Spacer,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { FaGithub, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
+import resume from "../Aseests/Aakash_Mukherjee_Resume.pdf"
 
 const Links = ['Home', 'About', 'Skills','Projects','Contact'];
 
 const NavLink = ({ children }) => (
   <Link
-    px={10}
+    px={5}
+    color={"#fff"}
     py={1}
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      bg: 'gray.800',
     }}
     href={'#'}>
     {children}
@@ -41,14 +34,19 @@ const NavLink = ({ children }) => (
 export default function Navbar() {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const {colorMode,toggleColorMode}=useColorMode();
-  const isDark=colorMode==="dark";
+
+  const handleClick=()=>{
+    window.open(
+      "https://drive.google.com/file/d/1DGs-bUVYzhtYaKHO6WVLHegLxLXubbdB/view?usp=sharing",
+      "_blank"
+    )
+  }
 
 
   return (
-    <>
-      <Box bg={useColorModeValue('gray.200', 'gray.900')} px={5}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+    <Box>
+      <Box bg={'gray.900'} pos={"fixed"} w={"100%"} top={0} zIndex={999}>
+        <Flex maxW={"100%"} h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -56,13 +54,14 @@ export default function Navbar() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={'center'}>
+          <HStack spacing={1} alignItems={'center'}>
             <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">Aakash</Heading>
           </HStack>
           <HStack
             as={'nav'}
-            spacing={6}
+            spacing={{md:2,lg:10,sm:0}}
             display={{ base: 'none', md: 'flex'}}
+            fontSize={{ base: '0px', md: '10px', lg:'20px'}}
             >
             {Links.map((link) => (
               <NavLink key={link}>{link}</NavLink>
@@ -70,29 +69,30 @@ export default function Navbar() {
           </HStack>
           <Flex alignItems={'center'}>
             <Menu>
-              <IconButton ml={2} icon={<FaLinkedin/>} isRound='true' onClick={toggleColorMode}></IconButton>
-              <IconButton ml={2} icon={<FaGithub/>} isRound='true' onClick={toggleColorMode}></IconButton>
-              <IconButton ml={2} icon={isDark?<FaSun/>:<FaMoon/>} isRound="true" onClick={toggleColorMode}></IconButton>
-              <MenuButton
-                as={Button}
-                rounded={'full'}
-                variant={'link'}
-                cursor={'pointer'}
-                minW={0}>
+              <IconButton m={"auto"}  icon={<FaLinkedin/>} isRound='true' ></IconButton>
+              <IconButton m={"auto"} ml={3} icon={<FaGithub/>} isRound='true' ></IconButton>
+                <Link
+                  target="_blank"
+                  href={resume}
+                  download={"Aakash_Mukherjee_Resume"}
+                  _hover={{textDecoration:"none"}}
+                >
                 <Button
+                  download={resume} 
+                  onClick={()=>handleClick()}
                   variant={'solid'}
-                  color={isDark?"white":"black"}
-                  bgGradient={"linear(to-r,cyan.400,blue.500,purple.600)"}
-                  size={'sm'}
-                  ml={2}>
+                  cursor={'pointer'}
+                  color={"white"}
+                  bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+                  size={'md'}
+                  ml={2}
+                  mr={2}>
                   Resume
-                </Button>
-              </MenuButton>
-              
+                </Button> 
+                </Link>
             </Menu>
           </Flex>
         </Flex>
-
         {isOpen ? (
           <Box pb={4} display={{ md: 'none'}}>
             <Stack as={'nav'} spacing={5}>
@@ -104,6 +104,6 @@ export default function Navbar() {
           
         ) : null}
       </Box>
-    </>
+    </Box>
   );
 }

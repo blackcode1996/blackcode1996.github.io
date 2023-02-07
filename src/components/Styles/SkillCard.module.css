@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 140px;
+    height: 120px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-family: cursive;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: #f2f8f9;
+    box-shadow: rgba(43, 64, 70, 0.14) 0px 12px 32px;
+    border-radius: 10px;
+  }
+  .card:hover {
+    box-shadow: rgba(43, 64, 70, 0.1) 0px 12px 44px;
+    animation-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition:15ms;
+    transition-timing-function: ease;
+    transition-delay: 12ms;
+    transform-origin: 50px 50px 0;
+  }
+  .card:hover > * {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    font-size: 0px;
+  }
+  .card::after{
+    background: linear-gradient(to bottom right, 
+    rgb(255, 0, 0), rgb(255, 213, 0));
+  }
