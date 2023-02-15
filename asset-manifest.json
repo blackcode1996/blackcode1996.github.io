@@ -1,15 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c5ffeb5.css",
-    "main.js": "/static/js/main.ca7ed83d.js",
+    "main.css": "/static/css/main.fe1b2f75.css",
+    "main.js": "/static/js/main.7508f194.js",
+    "static/media/homepage.png": "/static/media/homepage.4e6d317d1eb30308dc4f.png",
+    "static/media/packages_page.png": "/static/media/packages_page.91f48298569f8af1391e.png",
+    "static/media/mountains_page.png": "/static/media/mountains_page.5a9a14492e51e695f131.png",
+    "static/media/Beaches.png": "/static/media/Beaches.e6b8a678e66da0e4f005.png",
+    "static/media/singal_package.png": "/static/media/singal_package.77b07c22616215e69144.png",
     "static/media/wavinghand.gif": "/static/media/wavinghand.071f6042a7fef59e963b.gif",
+    "static/media/singapore.png": "/static/media/singapore.ef9aa35040f41ad1dc40.png",
+    "static/media/img1.png": "/static/media/img1.e2c4e36852b2532d4ee9.png",
     "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.2e9b103df389b927b3cf.pdf",
+    "static/media/img8.png": "/static/media/img8.11d77754de46f3c3015b.png",
+    "static/media/img2.png": "/static/media/img2.aae8966c70b9990c92d9.png",
+    "static/media/img3.png": "/static/media/img3.0c47773cb645442d8d5d.png",
+    "static/media/img4.png": "/static/media/img4.ce973925325e4f9a7d7d.png",
+    "static/media/Account.png": "/static/media/Account.3404bcd9448f93c1b59c.png",
+    "static/media/Search_fuctionality.png": "/static/media/Search_fuctionality.5c58d9106119019809cf.png",
+    "static/media/payment_page.png": "/static/media/payment_page.edb9a8157122184f9490.png",
+    "static/media/Dashboard.png": "/static/media/Dashboard.7839b7a79f804b7277d5.png",
+    "static/media/Packages.png": "/static/media/Packages.a3e093642a6a48a79d5d.png",
+    "static/media/img6.png": "/static/media/img6.ba9d077e1ae6cd9bcee2.png",
+    "static/media/Customers.png": "/static/media/Customers.a4d9e6b5675bf286ff2f.png",
+    "static/media/login_page.png": "/static/media/login_page.605ac90d67d8bd2cb9a3.png",
+    "static/media/img5.png": "/static/media/img5.f9c004702baa1b6ad830.png",
+    "static/media/Login.png": "/static/media/Login.5067d471cfbbb1a66fb4.png",
+    "static/media/img7.png": "/static/media/img7.10df1f040ba2b0157100.png",
     "index.html": "/index.html",
-    "main.1c5ffeb5.css.map": "/static/css/main.1c5ffeb5.css.map",
-    "main.ca7ed83d.js.map": "/static/js/main.ca7ed83d.js.map"
+    "main.fe1b2f75.css.map": "/static/css/main.fe1b2f75.css.map",
+    "main.7508f194.js.map": "/static/js/main.7508f194.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c5ffeb5.css",
-    "static/js/main.ca7ed83d.js"
+    "static/css/main.fe1b2f75.css",
+    "static/js/main.7508f194.js"
   ]
 }
