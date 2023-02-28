@@ -1,21 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.fe1b2f75.css",
-    "main.js": "/static/js/main.47eeffda.js",
+    "main.js": "/static/js/main.bcaf5c13.js",
+    "static/media/homepage1.png": "/static/media/homepage1.a1e26050fb5896222667.png",
     "static/media/homepage.png": "/static/media/homepage.4e6d317d1eb30308dc4f.png",
+    "static/media/homepage2.png": "/static/media/homepage2.f9df0bccd744079be47e.png",
     "static/media/packages_page.png": "/static/media/packages_page.91f48298569f8af1391e.png",
     "static/media/mountains_page.png": "/static/media/mountains_page.5a9a14492e51e695f131.png",
     "static/media/Beaches.png": "/static/media/Beaches.e6b8a678e66da0e4f005.png",
     "static/media/singal_package.png": "/static/media/singal_package.77b07c22616215e69144.png",
     "static/media/wavinghand.gif": "/static/media/wavinghand.071f6042a7fef59e963b.gif",
+    "static/media/homepage_1.png": "/static/media/homepage_1.3e1c246fdf254607b615.png",
+    "static/media/homepage_2.png": "/static/media/homepage_2.9447b255ff6026ffbc60.png",
     "static/media/singapore.png": "/static/media/singapore.ef9aa35040f41ad1dc40.png",
+    "static/media/single_product_page_2.png": "/static/media/single_product_page_2.94b8ec4ecee6eb590456.png",
+    "static/media/product_page_2.png": "/static/media/product_page_2.04edd5519fda94621ba7.png",
+    "static/media/product_page_1.png": "/static/media/product_page_1.719521d85d1a4650d6eb.png",
+    "static/media/single_product_page_1.png": "/static/media/single_product_page_1.c42af628e09d3b1d6787.png",
     "static/media/img1.png": "/static/media/img1.e2c4e36852b2532d4ee9.png",
-    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.2e9b103df389b927b3cf.pdf",
+    "static/media/admin_darkmode.png": "/static/media/admin_darkmode.46e30280489aab7df00f.png",
+    "static/media/admin_products.png": "/static/media/admin_products.3647ba1f1d83e3584fbc.png",
     "static/media/img8.png": "/static/media/img8.11d77754de46f3c3015b.png",
     "static/media/img2.png": "/static/media/img2.aae8966c70b9990c92d9.png",
+    "static/media/singleproductpage_1.png": "/static/media/singleproductpage_1.ab1c126281df1e80c0b4.png",
+    "static/media/admin_userpage.png": "/static/media/admin_userpage.464f431472e8b5d9e340.png",
+    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.f1065bd6b212d8dd5d83.pdf",
     "static/media/img3.png": "/static/media/img3.0c47773cb645442d8d5d.png",
+    "static/media/cart_page.png": "/static/media/cart_page.a77f37116c7330a1529f.png",
     "static/media/img4.png": "/static/media/img4.ce973925325e4f9a7d7d.png",
     "static/media/Account.png": "/static/media/Account.3404bcd9448f93c1b59c.png",
+    "static/media/admin_dashboard.png": "/static/media/admin_dashboard.4666f54dcec59a033202.png",
     "static/media/Search_fuctionality.png": "/static/media/Search_fuctionality.5c58d9106119019809cf.png",
     "static/media/payment_page.png": "/static/media/payment_page.edb9a8157122184f9490.png",
     "static/media/Dashboard.png": "/static/media/Dashboard.7839b7a79f804b7277d5.png",
@@ -25,15 +39,17 @@
     "static/media/login_page.png": "/static/media/login_page.605ac90d67d8bd2cb9a3.png",
     "static/media/img5.png": "/static/media/img5.f9c004702baa1b6ad830.png",
     "static/media/Login.png": "/static/media/Login.5067d471cfbbb1a66fb4.png",
+    "static/media/account_page.png": "/static/media/account_page.a85a3dd7e235c4e0d0cc.png",
     "static/media/img7.png": "/static/media/img7.10df1f040ba2b0157100.png",
+    "static/media/checkoutpage.png": "/static/media/checkoutpage.576ca873048d76c8f81e.png",
     "static/media/left.webp": "/static/media/left.c16da9a5cf658d5ce735.webp",
     "static/media/right.webp": "/static/media/right.29cd0c25f449a1621c4a.webp",
     "index.html": "/index.html",
     "main.fe1b2f75.css.map": "/static/css/main.fe1b2f75.css.map",
-    "main.47eeffda.js.map": "/static/js/main.47eeffda.js.map"
+    "main.bcaf5c13.js.map": "/static/js/main.bcaf5c13.js.map"
   },
   "entrypoints": [
     "static/css/main.fe1b2f75.css",
-    "static/js/main.47eeffda.js"
+    "static/js/main.bcaf5c13.js"
   ]
 }
