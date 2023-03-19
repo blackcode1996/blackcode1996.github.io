@@ -24,8 +24,8 @@ const About = () => {
 
   return (
     <>
-      <Flex align={"center"} justify={"center"} pt={"40px"} m={"auto"}>
-        <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+      <Flex id="About" align={"center"} justify={"center"} maxW={"100%"} pt={"40px"} m={"auto"}>
+        <Heading mb={"50px"} fontSize={{ base: "3xl", md: "3xl", lg: "5xl" }}>
           <Text
             as={"span"}
             position={"relative"}
@@ -48,10 +48,12 @@ const About = () => {
         </Heading>
       </Flex>
       {/* main */}
-      <Stack minH={"70vh"} direction={{ base: "column", md: "row" }}>
+      <Stack minH={{lg:"70vh"}} direction={{ base: "column", md: "row" }}>
         <Flex
           m={"auto"}
-          ml={{ md: "20px", lg: "100px",sm:"10px" }}
+          mt={{md:"50px",base:"-30px"}}
+          ml={{ md: "50px", lg: "100px",base:"10px" }}
+          mr={{base:"10px"}}
           flex={1}
           align={"center"}
           justify={"center"}
@@ -68,10 +70,10 @@ const About = () => {
             from scratch at Masai. Looking to further enhance my skills.
           </Text>
         </Flex>
-        <Flex flex={1}>
+        <Flex flex={1} height={"max-content"}>
           <Box
             className="stage-cube-cont"
-            mt={{ base: "1%", md: "35%", lg: "30%" }}
+            mt={{ base: "20%", md: "35%", lg: "10%" }}
             d={"flex"}
             justifyContent={"center"}
             alignItems={"center"}

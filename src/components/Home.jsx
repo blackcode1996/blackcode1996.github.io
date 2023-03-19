@@ -12,23 +12,32 @@ import {
 import React from "react";
 import { MdGradient } from "react-icons/md";
 import wavinghand from "../Aseests/wavinghand.gif"
-import Aakash_Mukherjee_Resume from "../Aseests/Aakash_Mukherjee_Resume.pdf"
+import resume from "../Aseests/Aakash_Mukherjee_Resume.pdf";
 
 export const Home = () => {
 
   const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'fp06_348_Aakash_Mukherjee_Resume';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-  <Box>
+  <Box maxW={"100%"} id="Home">
     <Stack mt={{base:"50px",lg:"0px",md:"50px"}}   ml={{base:"-19px",lg:"100px",md:""}} minH={{base:"20vh",md:"50vh",lg:"100vh"}} direction={{ base: 'column', md: 'row' }}>
        <Flex  p={8} flex={1} align={'center'} justify={'center'}>
          <Stack spacing={7} w={'full'} maxW={'100%'} >
            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} pl={"20px"}>
             <Flex>
               <Text color={"#fff"} fontSize="5xl" fontWeight="semibold">
-                Hello, I am 
+                Hi, I am 
               </Text>
-              <Image src={wavinghand} width={"80px"} height={"80px"}></Image>
+              <Image src={wavinghand} width={"60px"} height={"60px"}></Image>
             </Flex>
             <Flex fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text">
               Aakash Mukherjee
@@ -58,6 +67,7 @@ export const Home = () => {
               rounded={'full'}
               bg={'blue.400'}
               color={'white'}
+              onClick={handleDownload}
               _hover={{
                 bg: 'blue.500',
               }}>

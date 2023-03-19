@@ -3,6 +3,10 @@ import { Home } from './components/Home';
 import Navbar from './components/Navbar';
 import { Skills } from './components/Skills';
 import styles from "./App.css"
+import Github from './components/Github';
+import Projects from './components/Projects';
+import Contact from './components/ContactUs';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -11,6 +15,10 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Github/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
