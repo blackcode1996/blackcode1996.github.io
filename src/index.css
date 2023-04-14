@@ -1,3 +1,7 @@
+#root{
+    font-family: 'Nova Oval', cursive;
+}
+
 button:hover{
     color: cyan;
     background-color: #fff;

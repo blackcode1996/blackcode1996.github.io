@@ -70,8 +70,8 @@ export default function Navbar() {
               <Link
                 spy={true}
                 smooth={true}
-                offset={-55}
-                duration={500}
+                offset={-50}
+                duration={900}
                 to={link.id}
                 key={index}
                 className="nav-link"

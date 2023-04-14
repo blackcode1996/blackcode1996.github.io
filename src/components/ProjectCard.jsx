@@ -20,7 +20,7 @@ const ProjectCard = (project) => {
               _hover={{bg:"#D6D6D6", color:"#000000", transform:"scale(1.05)",transitionDuration : "1s", overflow:"hidden"}}
             >
               <VStack width={{ base: "100%", md: "70%" }} gap={"1"} p={4}>
-                <Heading>{project.title}</Heading>
+                <Heading fontFamily={"'Nova Oval', cursive;"}>{project.title}</Heading>
                 <Text>{project.description}</Text>
                 <Text fontSize={12} fontWeight="extrabold">{project.subdescription}</Text>
                 <Heading size="sm">
@@ -58,7 +58,7 @@ const ProjectCard = (project) => {
                 <CarouselCard images={project.images} />
               </Box>
               <VStack width={{ base: "100%", md: "70%" }} gap={"2"} p={4}>
-                <Heading>{project.title}</Heading>
+                <Heading fontFamily={"'Nova Oval', cursive;"}>{project.title}</Heading>
                 <Text>{project.description}</Text>
                 <Text fontSize={12} fontWeight="extrabold">{project.subdescription}</Text>
                 <Heading size="sm">

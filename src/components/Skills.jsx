@@ -40,7 +40,7 @@ import {
 
 export function Skills() {
   return (
-    <Container id="Skills" maxW={"90%"} paddingTop={{base:"290px",md:"100px"}} mt={{lg:"-150px"}}>
+    <Container  id="Skills" maxW={"90%"} paddingTop={{base:"290px",md:"100px"}} mt={{lg:"-150px"}}>
       <Heading
         align={"center"}
         justify={"center"}
@@ -50,6 +50,7 @@ export function Skills() {
           as={"span"}
           position={"relative"}
           color={"white"}
+          fontFamily={"'Nova Oval', cursive;"}
           _after={{
             content: "''",
             width: "100%",
@@ -72,6 +73,7 @@ export function Skills() {
         justify={"center"}
         variant="soft-rounded"
         colorScheme="blue"
+        
       >
         <TabList m={"auto"} justifyContent={"space-evenly"} gap={"10px"} fontSize={{base:"5px"}}>
           <Tab color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>All</Tab>
@@ -80,7 +82,7 @@ export function Skills() {
           <Tab color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>Tools</Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>
+          <TabPanel >
             <Grid
               w={"90%"}
               alignContent={"center"}
@@ -93,6 +95,7 @@ export function Skills() {
                 base: "repeat(2,1fr)",
               }}
               gridTemplateRows={"auto"}
+              
             >
               <GridItem>
                 <SkillCard
@@ -106,6 +109,7 @@ export function Skills() {
               </GridItem>
               <GridItem>
                 <SkillCard
+                  
                   skill="Redux"
                   icon={
                     <SiRedux

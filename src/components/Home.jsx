@@ -29,20 +29,21 @@ export const Home = () => {
 
   return (
   <Box maxW={"100%"} id="Home">
-    <Stack mt={{base:"50px",lg:"0px",md:"50px"}}   ml={{base:"-19px",lg:"100px",md:""}} minH={{base:"20vh",md:"50vh",lg:"100vh"}} direction={{ base: 'column', md: 'row' }}>
+    <Stack mt={{base:"50px",lg:"0px",md:"50px"}}   ml={{base:"-19px",lg:"100px",md:""}} minH={{base:"20vh",md:"vh",lg:"85vh"}} direction={{ base: 'column', md: 'row' }}>
        <Flex  p={8} flex={1} align={'center'} justify={'center'}>
          <Stack spacing={7} w={'full'} maxW={'100%'} >
            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} pl={"20px"}>
             <Flex>
-              <Text color={"#fff"} fontSize="5xl" fontWeight="semibold">
+              <Text color={"#fff"} fontSize="5xl" fontWeight="semibold" fontFamily={"'Nova Oval', cursive;"}>
                 Hi, I am 
               </Text>
               <Image src={wavinghand} width={"60px"} height={"60px"}></Image>
             </Flex>
-            <Flex fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text">
+            <Flex fontFamily={"'Nova Oval', cursive;"} fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" bgClip="text">
               Aakash Mukherjee
             </Flex>
             <Text
+              fontFamily={"'Nova Oval', cursive;"}
               as={'span'}
               position={'relative'}
               color={"white"}
@@ -77,6 +78,7 @@ export const Home = () => {
         </Stack>
       </Flex>
       <Flex  flex={1} align={"center"} justifyContent={"center"}>
+        <Box position={"relative"} width={"auto"} >
           <Image
             border={"1px solid #0083B0"}
             ml={{base:"15px",lg:"",md:""}}
@@ -90,6 +92,7 @@ export const Home = () => {
             boxSize={isNotSmallerScreen?"100px":"500px"}
             src="https://avatars.githubusercontent.com/u/110044436?v=4"
           />
+        </Box>
       </Flex>
     </Stack>
   </Box> 

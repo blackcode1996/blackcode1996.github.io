@@ -17,6 +17,7 @@ const Github = () => {
           as={"span"}
           position={"relative"}
           color={"white"}
+          fontFamily={"'Nova Oval', cursive;"}
           _after={{
             content: "''",
             width: "100%",

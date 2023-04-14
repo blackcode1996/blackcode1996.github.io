@@ -13,6 +13,7 @@ const Projects = () => {
         fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
         >
         <Text
+          fontFamily={"'Nova Oval', cursive;"}
           as={"span"}
           position={"relative"}
           color={"white"}
