@@ -19,7 +19,7 @@ import {
   useToast,
   Box,
   border,
-  Spinner
+  Spinner,
 } from "@chakra-ui/react";
 
 // import { GoLocation } from "react-icons/go";
@@ -87,7 +87,13 @@ const Contact = () => {
               borderRadius: "10px",
             },
             render: () => (
-              <Box color="white" p={3} bg={"#1a202c"}>
+              <Box
+                color="white"
+                p={3}
+                bg={"#1a202c"}
+                zIndex={1}
+                position={"relative"}
+              >
                 <Box display={"flex"} alignItems={"center"}>
                   <TiTick
                     fontSize={25}
@@ -122,7 +128,15 @@ const Contact = () => {
   // console.log(loading);
 
   return (
-    <Container maxW="7xl" py={10} px={{ base: 5, md: 8 }} id="Contact">
+    <Container
+      zIndex={1}
+      position={"relative"}
+      maxW="7xl"
+      py={10}
+      px={{ base: 5, md: 8 }}
+      id="Contact"
+      maxH={"200vh"}
+    >
       <Stack spacing={8}>
         <Flex align="center" justify="center" direction="column">
           <Heading
@@ -130,12 +144,14 @@ const Contact = () => {
             align={"center"}
             justify={"center"}
             fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+            data-aos="fade-down"
+            data-aos-duration="1000"
           >
             <Text
               as={"span"}
               position={"relative"}
               color={"white"}
-              fontFamily={"'Nova Oval', cursive;"}
+              fontFamily={"'Aboreto', cursive;"}
               _after={{
                 content: "''",
                 width: "100%",
@@ -152,7 +168,13 @@ const Contact = () => {
               Contact Me
             </Text>
           </Heading>
-          <Text fontSize="md" textAlign="center" color={"white"}>
+          <Text
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            fontSize="md"
+            textAlign="center"
+            color={"white"}
+          >
             Open for feedback and making connections feel free to contact me
           </Text>
         </Flex>
@@ -172,9 +194,22 @@ const Contact = () => {
                 px={3}
               >
                 <a href={option.href} target={"_blank"}>
-                  <Icon as={option.icon} w={10} h={10} color="cyan.400" />
+                  <Icon
+                    as={option.icon}
+                    w={10}
+                    h={10}
+                    color="cyan.400"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  />
                 </a>
-                <Text color={"cyan.100"} fontSize="lg" fontWeight="semibold">
+                <Text
+                  color={"cyan.100"}
+                  fontSize="lg"
+                  fontWeight="semibold"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   {option.label}
                 </Text>
                 <Text fontSize="sm" textAlign="center" fontStyle={"italic"}>
@@ -204,7 +239,7 @@ const Contact = () => {
                 spacing={3}
                 direction={{ base: "column", md: "row" }}
               >
-                <FormControl id="name" isRequired>
+                <FormControl id="name" isRequired data-aos="fade-right" data-aos-duration="1000">
                   <FormLabel>Name</FormLabel>
                   <Input
                     color={"#fff"}
@@ -219,7 +254,7 @@ const Contact = () => {
                     border={"3px solid #00FFFF"}
                   />
                 </FormControl>
-                <FormControl id="email" isRequired>
+                <FormControl id="email" isRequired data-aos="fade-left" data-aos-duration="1000">
                   <FormLabel>Email</FormLabel>
                   <Input
                     color={"#fff"}
@@ -235,7 +270,7 @@ const Contact = () => {
                   />
                 </FormControl>
               </Stack>
-              <FormControl id="message" isRequired>
+              <FormControl id="message" isRequired data-aos="fade-down" data-aos-duration="1000">
                 <FormLabel>Message</FormLabel>
                 <Textarea
                   name="message"
@@ -252,26 +287,30 @@ const Contact = () => {
               </FormControl>
             </VStack>
             <VStack w="100%">
-              <Button
+              <Button 
+                data-aos="fade-down" 
+                data-aos-duration="1000"
                 color={"white"}
                 bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
                 _hover={{
                   color: "#00FFFF",
-                  bg:"#fff"
+                  bg: "#fff",
                 }}
                 type="submit"
                 rounded="md"
                 p={"25px"}
                 w={{ base: "100%", md: "max-content" }}
               >
-                {loading && <Spinner
-                  thickness="5px"
-                  speed="0.5s"
-                  emptyColor="#fff"
-                  color="#00FFFF"
-                  size="md"
-                  m={"10px"}
-                />}
+                {loading && (
+                  <Spinner
+                    thickness="5px"
+                    speed="0.5s"
+                    emptyColor="#fff"
+                    color="#00FFFF"
+                    size="md"
+                    m={"10px"}
+                  />
+                )}
                 Send Message
               </Button>
             </VStack>

@@ -10,6 +10,7 @@ export function SkillCard({ skill, icon }) {
       {icon}
       <Box
         style={{ color: "#1a202c" }}
+        fontFamily={"'Nova Oval', cursive;"}
       >
         {skill}
       </Box>

@@ -56,7 +56,7 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function SmallWithLogoLeft() {
   return (
-    <Box bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" color={"#fff"} mt={{lg:"28px", md:"40px"}}>
+    <Box zIndex={1} position={"relative"} bgGradient="linear(to-r,cyan.400,blue.500,purple.600)" color={"#fff"} mt={{lg:"28px", md:"40px"}}>
       <Container
         as={Stack}
         maxW={"6xl"}

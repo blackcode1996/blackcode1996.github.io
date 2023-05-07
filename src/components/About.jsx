@@ -16,21 +16,22 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 
 const About = () => {
+
   const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
 
   return (
-    <>
-      <Flex id="About" align={"center"} justify={"center"} maxW={"100%"} pt={"40px"} m={"auto"}>
+    <div id="About" style={{maxHeight:"100vh", zIndex:1 , position:"relative"}}>
+      <Flex data-aos="fade-down" data-aos-duration="1000"  align={"center"} justify={"center"} maxW={"100%"}  pt={"40px"} m={"auto"} > 
         <Heading mb={"50px"} fontSize={{ base: "3xl", md: "3xl", lg: "5xl" }}>
           <Text
             as={"span"}
             position={"relative"}
             color={"white"}
-            fontFamily={"'Nova Oval', cursive;"}
+            fontFamily={"'Aboreto', cursive;"}
             _after={{
               content: "''",
               width: "100%",
@@ -51,6 +52,8 @@ const About = () => {
       {/* main */}
       <Stack minH={{lg:"70vh"}} direction={{ base: "column", md: "row" }}>
         <Flex
+          data-aos="fade-right"
+          data-aos-duration="1000"
           m={"auto"}
           mt={{md:"50px",base:"-30px"}}
           ml={{ md: "50px", lg: "100px",base:"10px" }}
@@ -71,7 +74,7 @@ const About = () => {
             from scratch at Masai. Looking to further enhance my skills.
           </Text>
         </Flex>
-        <Flex flex={1} height={"max-content"}>
+        <Flex flex={1} height={"max-content"} data-aos="fade-left" data-aos-duration="1000">
           <Box
             className="stage-cube-cont"
             mt={{ base: "20%", md: "35%", lg: "10%" }}
@@ -102,7 +105,7 @@ const About = () => {
           </Box>
         </Flex>
       </Stack>
-    </>
+    </div>
   );
 };
 

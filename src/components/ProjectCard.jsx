@@ -8,6 +8,8 @@ const ProjectCard = (project) => {
     if(project.id%2===0){
         return (
             <Flex
+            data-aos="fade-left"
+            data-aos-duration="1000"
               borderRadius={"20px"}
               alignItems="center"
               height={{ base: "100%", md: "300px" }}
@@ -20,10 +22,10 @@ const ProjectCard = (project) => {
               _hover={{bg:"#D6D6D6", color:"#000000", transform:"scale(1.05)",transitionDuration : "1s", overflow:"hidden"}}
             >
               <VStack width={{ base: "100%", md: "70%" }} gap={"1"} p={4}>
-                <Heading fontFamily={"'Nova Oval', cursive;"}>{project.title}</Heading>
-                <Text>{project.description}</Text>
-                <Text fontSize={12} fontWeight="extrabold">{project.subdescription}</Text>
-                <Heading size="sm">
+                <Heading fontFamily={"Philosopher"}>{project.title}</Heading>
+                <Text fontFamily={"Philosopher"}>{project.description}</Text>
+                <Text fontSize={12} fontFamily={"'Nova Oval', cursive;"} fontWeight="extrabold">{project.subdescription}</Text>
+                <Heading size="sm" fontFamily={"'Nova Oval', cursive;"}>
                   Tech Stack: <span style={{color:"cyan"}}>{project.techStack.join(", ")}</span>
                 </Heading>
                 <HStack gap="4">
@@ -43,6 +45,8 @@ const ProjectCard = (project) => {
     }else{
         return (
             <Flex
+            data-aos="fade-right"
+            data-aos-duration="1000"
               borderRadius={"20px"}
               alignItems="center"
               height={{ base: "100%", md: "300px" }}
@@ -58,10 +62,10 @@ const ProjectCard = (project) => {
                 <CarouselCard images={project.images} />
               </Box>
               <VStack width={{ base: "100%", md: "70%" }} gap={"2"} p={4}>
-                <Heading fontFamily={"'Nova Oval', cursive;"}>{project.title}</Heading>
-                <Text>{project.description}</Text>
-                <Text fontSize={12} fontWeight="extrabold">{project.subdescription}</Text>
-                <Heading size="sm">
+                <Heading fontFamily={"Philosopher"}>{project.title}</Heading>
+                <Text fontFamily={"Philosopher"}>{project.description}</Text>
+                <Text fontSize={12} fontFamily={"'Nova Oval', cursive;"} fontWeight="extrabold">{project.subdescription}</Text>
+                <Heading size="sm" fontFamily={"'Nova Oval', cursive;"}>
                   Tech Stack: <span style={{color:"cyan"}}>{project.techStack.join(", ")}</span>
                 </Heading>
                 <HStack gap="4">

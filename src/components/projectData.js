@@ -13,6 +13,15 @@ import a_Customers from "../Aseests/ProjectsSnaps/Tripguru/Customers.png"
 import a_Account from "../Aseests/ProjectsSnaps/Tripguru/Account.png"
 import a_search from "../Aseests/ProjectsSnaps/Tripguru/Search_fuctionality.png"
 import a_login from "../Aseests/ProjectsSnaps/Tripguru/Login.png"
+//airbnb
+import HomePage from "../Aseests/ProjectsSnaps/Airbnb/HomePage.png";
+import Filters from "../Aseests/ProjectsSnaps/Airbnb/Filters.png"; 
+import Listings from "../Aseests/ProjectsSnaps/Airbnb/Listing.gif"; 
+import MyProperties from "../Aseests/ProjectsSnaps/Airbnb/MyProperties.png"; 
+import MyTrips from "../Aseests/ProjectsSnaps/Airbnb/MyTrips.png"; 
+import PictureUpdation from "../Aseests/ProjectsSnaps/Airbnb/PictureUpdation.png"; 
+import SinglePage from "../Aseests/ProjectsSnaps/Airbnb/SinglePage.png"; 
+import SinglePage_2 from "../Aseests/ProjectsSnaps/Airbnb/SinglePage2.png"; 
 //easywork
 import img1 from "../Aseests/ProjectsSnaps/Easywork/img1.png"
 import img2 from "../Aseests/ProjectsSnaps/Easywork/img2.png"
@@ -66,8 +75,18 @@ const projectsData = [
     images: [m_homepage,m_Beaches,m_mountains,m_singapore,m_packages,m_singal_package,m_login_page,m_payment,a_login,a_dashboard,a_search,a_packages,a_Customers,a_Account
     ],
   },
-  {
+  { 
     id:3,
+    title: "Airbnb",
+    description: "It is a company that operates an online marketplace for short-term homestays and experiences.",
+    subdescription:"A collaborative project of 2 members built in a span of 20 days",
+    techStack: ["CSS3","Tailwind","Next.js","Prisma", "MongoDB"],
+    deployedURL: "https://airbnd-clone-ba.vercel.app/",
+    githubURL: "https://github.com/Bipin579/AirBnb_clone",
+    images: [HomePage,Filters,Listings,MyProperties,MyTrips,SinglePage,SinglePage_2,PictureUpdation]
+  },
+  {
+    id:4,
     title: "Easywork",
     description: "It is a clone of Wrike website which I named as Easywork. Wrike, Inc. is an American project management application service provider and we have cloned it with the use of various techstacks.",
     subdescription:"A individual project built in a span of 4 days",
@@ -77,11 +96,11 @@ const projectsData = [
     images: [img1,img2,img3,img4,img5,img6,img7,img8],
   },
   {
-    id:4,
+    id:5,
     title: "Formal Click",
     description: "It is a clone of Tata Cliq website which we named as Formal Click. Tata Cliq is an Indian e-commerce company based in Mumbai, India.",
     techStack: ["HTML", "JavaScript", "CSS","React","Redux","JSON server"],
-    deployedURL: "formalclick.netlify.app/",
+    deployedURL: "https://tata-cliq-clone.vercel.app/",
     githubURL: "https://github.com/blackcode1996/Tata-Cliq-clone",
     images: [f_homepage_1,f_homepage_2,f_productp_1,f_productp_2,f_sp],
   },

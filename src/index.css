@@ -1,5 +1,8 @@
 #root{
-    font-family: 'Nova Oval', cursive;
+    /* font-family: 'Nova Oval', cursive; */
+    /* font-family:'Aboreto', cursive */
+    font-family: 'Philosopher', sans-serif;
+    cursor:url()
 }
 
 button:hover{

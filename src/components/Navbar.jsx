@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <Box>
-      <Box bg={"gray.900"} pos={"fixed"} w={"100%"} top={0} zIndex={999}>
+      <Box bg={"#232741"} pos={"fixed"} w={"100%"} top={0} zIndex={999}>
         <Flex
           maxW={"100%"}
           h={16}
