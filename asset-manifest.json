@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.00ee91fc.css",
-    "main.js": "/static/js/main.829f2d68.js",
-    "static/media/Listing.gif": "/static/media/Listing.cae28ad3cd960a4ad169.gif",
+    "main.css": "/static/css/main.d8906b56.css",
+    "main.js": "/static/js/main.eb7e56d6.js",
     "static/media/homepage1.png": "/static/media/homepage1.a1e26050fb5896222667.png",
     "static/media/homepage.png": "/static/media/homepage.4e6d317d1eb30308dc4f.png",
-    "static/media/HomePage.png": "/static/media/HomePage.d861db86b411b1736c0a.png",
     "static/media/homepage2.png": "/static/media/homepage2.f9df0bccd744079be47e.png",
-    "static/media/SinglePage.png": "/static/media/SinglePage.fb669c1681546f629bd9.png",
     "static/media/packages_page.png": "/static/media/packages_page.91f48298569f8af1391e.png",
     "static/media/mountains_page.png": "/static/media/mountains_page.5a9a14492e51e695f131.png",
     "static/media/Beaches.png": "/static/media/Beaches.e6b8a678e66da0e4f005.png",
     "static/media/singal_package.png": "/static/media/singal_package.77b07c22616215e69144.png",
     "static/media/wavinghand.gif": "/static/media/wavinghand.071f6042a7fef59e963b.gif",
     "static/media/homepage_1.png": "/static/media/homepage_1.3e1c246fdf254607b615.png",
-    "static/media/Filters.png": "/static/media/Filters.6b7a0f9ec4bd9cff7169.png",
     "static/media/homepage_2.png": "/static/media/homepage_2.9447b255ff6026ffbc60.png",
     "static/media/singapore.png": "/static/media/singapore.ef9aa35040f41ad1dc40.png",
     "static/media/single_product_page_2.png": "/static/media/single_product_page_2.94b8ec4ecee6eb590456.png",
@@ -26,19 +22,15 @@
     "static/media/admin_products.png": "/static/media/admin_products.3647ba1f1d83e3584fbc.png",
     "static/media/img8.png": "/static/media/img8.11d77754de46f3c3015b.png",
     "static/media/img2.png": "/static/media/img2.aae8966c70b9990c92d9.png",
-    "static/media/MyTrips.png": "/static/media/MyTrips.ff1df2700c94c5b578f5.png",
     "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.3af5f55a8ea581b17400.pdf",
     "static/media/singleproductpage_1.png": "/static/media/singleproductpage_1.ab1c126281df1e80c0b4.png",
     "static/media/admin_userpage.png": "/static/media/admin_userpage.464f431472e8b5d9e340.png",
     "static/media/img3.png": "/static/media/img3.0c47773cb645442d8d5d.png",
-    "static/media/SinglePage2.png": "/static/media/SinglePage2.db75924f77cce7b2a166.png",
     "static/media/cart_page.png": "/static/media/cart_page.a77f37116c7330a1529f.png",
     "static/media/img4.png": "/static/media/img4.ce973925325e4f9a7d7d.png",
     "static/media/Account.png": "/static/media/Account.3404bcd9448f93c1b59c.png",
-    "static/media/MyProperties.png": "/static/media/MyProperties.f0e5a496425d56871975.png",
     "static/media/admin_dashboard.png": "/static/media/admin_dashboard.4666f54dcec59a033202.png",
     "static/media/Search_fuctionality.png": "/static/media/Search_fuctionality.5c58d9106119019809cf.png",
-    "static/media/PictureUpdation.png": "/static/media/PictureUpdation.f4444a2845ceff9327cc.png",
     "static/media/payment_page.png": "/static/media/payment_page.edb9a8157122184f9490.png",
     "static/media/Dashboard.png": "/static/media/Dashboard.7839b7a79f804b7277d5.png",
     "static/media/Packages.png": "/static/media/Packages.a3e093642a6a48a79d5d.png",
@@ -54,11 +46,11 @@
     "static/media/right.webp": "/static/media/right.29cd0c25f449a1621c4a.webp",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.303f33a50352aea260bc42ff6d287c1d.svg",
-    "main.00ee91fc.css.map": "/static/css/main.00ee91fc.css.map",
-    "main.829f2d68.js.map": "/static/js/main.829f2d68.js.map"
+    "main.d8906b56.css.map": "/static/css/main.d8906b56.css.map",
+    "main.eb7e56d6.js.map": "/static/js/main.eb7e56d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.00ee91fc.css",
-    "static/js/main.829f2d68.js"
+    "static/css/main.d8906b56.css",
+    "static/js/main.eb7e56d6.js"
   ]
 }
