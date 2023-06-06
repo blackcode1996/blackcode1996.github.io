@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8906b56.css",
-    "main.js": "/static/js/main.eb7e56d6.js",
+    "main.css": "/static/css/main.ba6be2f7.css",
+    "main.js": "/static/js/main.9b006e72.js",
     "static/media/homepage1.png": "/static/media/homepage1.a1e26050fb5896222667.png",
     "static/media/homepage.png": "/static/media/homepage.4e6d317d1eb30308dc4f.png",
     "static/media/homepage2.png": "/static/media/homepage2.f9df0bccd744079be47e.png",
@@ -17,12 +17,13 @@
     "static/media/product_page_2.png": "/static/media/product_page_2.04edd5519fda94621ba7.png",
     "static/media/product_page_1.png": "/static/media/product_page_1.719521d85d1a4650d6eb.png",
     "static/media/single_product_page_1.png": "/static/media/single_product_page_1.c42af628e09d3b1d6787.png",
+    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.7fb3640908bc9a4c862c.pdf",
     "static/media/img1.png": "/static/media/img1.e2c4e36852b2532d4ee9.png",
     "static/media/admin_darkmode.png": "/static/media/admin_darkmode.46e30280489aab7df00f.png",
     "static/media/admin_products.png": "/static/media/admin_products.3647ba1f1d83e3584fbc.png",
     "static/media/img8.png": "/static/media/img8.11d77754de46f3c3015b.png",
+    "static/media/LoginPage_pc.png": "/static/media/LoginPage_pc.974e26e0a454eef4c073.png",
     "static/media/img2.png": "/static/media/img2.aae8966c70b9990c92d9.png",
-    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.3af5f55a8ea581b17400.pdf",
     "static/media/singleproductpage_1.png": "/static/media/singleproductpage_1.ab1c126281df1e80c0b4.png",
     "static/media/admin_userpage.png": "/static/media/admin_userpage.464f431472e8b5d9e340.png",
     "static/media/img3.png": "/static/media/img3.0c47773cb645442d8d5d.png",
@@ -31,6 +32,9 @@
     "static/media/Account.png": "/static/media/Account.3404bcd9448f93c1b59c.png",
     "static/media/admin_dashboard.png": "/static/media/admin_dashboard.4666f54dcec59a033202.png",
     "static/media/Search_fuctionality.png": "/static/media/Search_fuctionality.5c58d9106119019809cf.png",
+    "static/media/HomePage_Pc.png": "/static/media/HomePage_Pc.6ef18a87a0d2ed8bb238.png",
+    "static/media/Chatpage_pc.png": "/static/media/Chatpage_pc.12214d21d8c3e60396ff.png",
+    "static/media/SignUp_page_pc.png": "/static/media/SignUp_page_pc.bc511c938568c95726a3.png",
     "static/media/payment_page.png": "/static/media/payment_page.edb9a8157122184f9490.png",
     "static/media/Dashboard.png": "/static/media/Dashboard.7839b7a79f804b7277d5.png",
     "static/media/Packages.png": "/static/media/Packages.a3e093642a6a48a79d5d.png",
@@ -46,11 +50,11 @@
     "static/media/right.webp": "/static/media/right.29cd0c25f449a1621c4a.webp",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.303f33a50352aea260bc42ff6d287c1d.svg",
-    "main.d8906b56.css.map": "/static/css/main.d8906b56.css.map",
-    "main.eb7e56d6.js.map": "/static/js/main.eb7e56d6.js.map"
+    "main.ba6be2f7.css.map": "/static/css/main.ba6be2f7.css.map",
+    "main.9b006e72.js.map": "/static/js/main.9b006e72.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8906b56.css",
-    "static/js/main.eb7e56d6.js"
+    "static/css/main.ba6be2f7.css",
+    "static/js/main.9b006e72.js"
   ]
 }
