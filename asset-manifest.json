@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.51fce5f3.css",
-    "main.js": "/static/js/main.42788e42.js",
+    "main.js": "/static/js/main.27375f92.js",
     "static/media/Listing.gif": "/static/media/Listing.cae28ad3cd960a4ad169.gif",
     "static/media/loader.mp4": "/static/media/loader.0a578d63c8fc3186c6f8.mp4",
     "static/media/homepage1.png": "/static/media/homepage1.a1e26050fb5896222667.png",
@@ -27,7 +27,6 @@
     "static/media/admin_products.png": "/static/media/admin_products.3647ba1f1d83e3584fbc.png",
     "static/media/LoginPage_pc.png": "/static/media/LoginPage_pc.974e26e0a454eef4c073.png",
     "static/media/MyTrips.png": "/static/media/MyTrips.ff1df2700c94c5b578f5.png",
-    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.3af5f55a8ea581b17400.pdf",
     "static/media/singleproductpage_1.png": "/static/media/singleproductpage_1.ab1c126281df1e80c0b4.png",
     "static/media/admin_userpage.png": "/static/media/admin_userpage.464f431472e8b5d9e340.png",
     "static/media/SinglePage2.png": "/static/media/SinglePage2.db75924f77cce7b2a166.png",
@@ -43,6 +42,7 @@
     "static/media/npm_package_pic1.png": "/static/media/npm_package_pic1.8f24b37f0d7eb6ffc882.png",
     "static/media/payment_page.png": "/static/media/payment_page.edb9a8157122184f9490.png",
     "static/media/Dashboard.png": "/static/media/Dashboard.7839b7a79f804b7277d5.png",
+    "static/media/Aakash_Mukherjee_Resume.pdf": "/static/media/Aakash_Mukherjee_Resume.f19d8783688027dce99f.pdf",
     "static/media/Packages.png": "/static/media/Packages.a3e093642a6a48a79d5d.png",
     "static/media/Customers.png": "/static/media/Customers.a4d9e6b5675bf286ff2f.png",
     "static/media/login_page.png": "/static/media/login_page.605ac90d67d8bd2cb9a3.png",
@@ -55,10 +55,10 @@
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.303f33a50352aea260bc42ff6d287c1d.svg",
     "main.51fce5f3.css.map": "/static/css/main.51fce5f3.css.map",
-    "main.42788e42.js.map": "/static/js/main.42788e42.js.map"
+    "main.27375f92.js.map": "/static/js/main.27375f92.js.map"
   },
   "entrypoints": [
     "static/css/main.51fce5f3.css",
-    "static/js/main.42788e42.js"
+    "static/js/main.27375f92.js"
   ]
 }
