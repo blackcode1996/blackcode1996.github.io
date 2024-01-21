@@ -22,6 +22,7 @@ const Links = [
   { title: "Home", id: "Home" },
   { title: "About", id: "About" },
   { title: "Skills", id: "Skills" },
+  { title: "Experience", id: "Experience" },
   { title: "Projects", id: "Projects" },
   { title: "Contact", id: "Contact" },
 ];
@@ -37,11 +38,12 @@ export default function Navbar() {
   };
 
   return (
-    <Box>
-      <Box bg={"#232741"} pos={"fixed"} w={"100%"} top={0} zIndex={999}>
+    <Box height={"10%"}>
+      <Box bg={"#080c2c"} pos={"fixed"} w={"100%"} top={0} zIndex={999}>
         <Flex
           maxW={"100%"}
-          h={16}
+          p={"10px"}
+          // h={16}
           alignItems={"center"}
           justifyContent={"space-between"}
         >
@@ -96,7 +98,7 @@ export default function Navbar() {
             <Menu>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/aakash-mukherjee-blackcode1996/"
+                href="https://www.linkedin.com/in/aakashmukherjee/"
               >
                 <IconButton
                   m={"auto"}
@@ -115,7 +117,7 @@ export default function Navbar() {
               <a
                 target="_blank"
                 href={resume}
-                download={"fp06_348_Aakash_Mukherjee_Resume"}
+                download={"Aakash_Mukherjee_Resume"}
                 _hover={{ textDecoration: "none" }}
               >
                 <Button

@@ -4,7 +4,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
-  useMediaQuery,
+  // useMediaQuery,
   Box,
 } from "@chakra-ui/react";
 import {
@@ -16,17 +16,18 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect } from "react";
+import React from "react";
 import "./about.css";
 
 const About = () => {
-
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
+  // const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
 
   return (
-    <div id="About" style={{maxHeight:"100vh", zIndex:1 , position:"relative"}}>
-      <Flex data-aos="fade-down" data-aos-duration="1000"  align={"center"} justify={"center"} maxW={"100%"}  pt={"40px"} m={"auto"} > 
-        <Heading mb={"50px"} fontSize={{ base: "3xl", md: "3xl", lg: "5xl" }}>
+    <Box
+      id="About"
+      style={{ maxHeight: "100vh", zIndex: 1, position: "relative",height:'100vh' }}
+    >
+      <Heading pt={"50px"} textAlign={"center"} mb={"50px"} fontSize={{ base: "3xl", md: "3xl", lg: "5xl" }}>
           <Text
             as={"span"}
             position={"relative"}
@@ -48,23 +49,28 @@ const About = () => {
             About Me
           </Text>
         </Heading>
+      <Flex
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        maxW={"100%"}
+        p={"50px"}
+        m={"auto"}
+      >
       </Flex>
       {/* main */}
-      <Stack minH={{lg:"70vh"}} direction={{ base: "column", md: "row" }}>
+      <Stack direction={{ base: "column", md: "row" }}>
         <Flex
           data-aos="fade-right"
           data-aos-duration="1000"
           m={"auto"}
-          mt={{md:"50px",base:"-30px"}}
-          ml={{ md: "50px", lg: "100px",base:"10px" }}
-          mr={{base:"10px"}}
+          mt={{ md: "50px", base: "-30px" }}
+          ml={{ md: "50px", lg: "100px", base: "10px" }}
+          mr={{ base: "10px" }}
           flex={1}
-          align={"center"}
-          justify={"center"}
         >
           <Text
             spacing={6}
-            fontSize={{ base: "1xl", lg: "3xl", md: "2xl" }}
+            fontSize={{ base: "1xl", md: "2xl",lg: "3xl",}}
             color={"white"}
           >
             A tech-enthusiast, with 1000+ hours of hands-on coding & project
@@ -74,7 +80,12 @@ const About = () => {
             from scratch at Masai. Looking to further enhance my skills.
           </Text>
         </Flex>
-        <Flex flex={1} height={"max-content"} data-aos="fade-left" data-aos-duration="1000">
+        <Flex
+          flex={1}
+          height={"max-content"}
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <Box
             className="stage-cube-cont"
             mt={{ base: "20%", md: "35%", lg: "10%" }}
@@ -105,7 +116,7 @@ const About = () => {
           </Box>
         </Flex>
       </Stack>
-    </div>
+    </Box>
   );
 };
 

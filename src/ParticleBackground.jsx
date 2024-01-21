@@ -4,7 +4,6 @@ import { loadFull } from "tsparticles";
 
 export default function ParticleBackground() {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -24,7 +23,7 @@ export default function ParticleBackground() {
         autoPlay: true,
         background: {
           color: {
-            value: "#232741",
+            value: "#080c2c",
           },
           position: "50% 50%",
           repeat: "no-repeat",

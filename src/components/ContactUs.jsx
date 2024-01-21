@@ -8,17 +8,17 @@ import {
   Stack,
   Button,
   Heading,
-  useColorModeValue,
+  // useColorModeValue,
   VStack,
   Flex,
   Text,
   Icon,
   Divider,
   useBreakpointValue,
-  color,
+  // color,
   useToast,
   Box,
-  border,
+  // border,
   Spinner,
 } from "@chakra-ui/react";
 
@@ -69,10 +69,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_xm4k3jc",
+        "service_fj42j96",
         "template_5pfjagk",
         form.current,
-        "LTIWxh1DU6kTCWg6D"
+        "jWOBZPEVycDtDO-CN"
       )
       .then(
         (result) => {

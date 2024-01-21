@@ -12,23 +12,26 @@ import {
   SiNpm,
   SiPostman,
   SiExpress,
-  SiVuedotjs,
+  // SiVuedotjs,
   SiVite,
   SiChakraui,
-  SiVsco,
+  // SiVsco,
   SiVisualstudiocode,
   SiNextdotjs,
   SiPrisma,
   SiTailwindcss,
+  SiSemanticuireact,
+  SiBootstrap,
+  SiTypescript,
 } from "react-icons/si";
-import { FaGitAlt, FaBusinessTime, FaGithub } from "react-icons/fa";
-import { RiTeamFill } from "react-icons/ri";
-import { GiTeamUpgrade } from "react-icons/gi";
-import { MdConnectWithoutContact, MdReportProblem } from "react-icons/md";
-import { BsQuestionCircleFill } from "react-icons/bs";
+import { FaBitbucket, FaGitAlt, FaGithub, FaJira, FaTrello } from "react-icons/fa";
+// import { RiTeamFill } from "react-icons/ri";
+// import { GiTeamUpgrade } from "react-icons/gi";
+// import { MdConnectWithoutContact, MdReportProblem } from "react-icons/md";
+// import { BsQuestionCircleFill } from "react-icons/bs";
 import {
   Container,
-  Flex,
+  // Flex,
   Grid,
   GridItem,
   Heading,
@@ -43,8 +46,9 @@ import {
 
 export function Skills() {
   return (
-    <Container zIndex={1} position={"relative"} maxH={"300vh"} id="Skills" maxW={"90%"} paddingTop={{base:"290px",md:"10px"}} >
+    <Container zIndex={1} h={"100%"} position={"relative"} maxH={"100%"} id="Skills" maxW={"90%"} >
       <Heading
+        pt={"50px"}
         data-aos="fade-down"
         align={"center"}
         justify={"center"}
@@ -133,6 +137,16 @@ export function Skills() {
               </GridItem>
               <GridItem data-aos="flip-left">
                 <SkillCard
+                  skill="TypeScript"
+                  icon={
+                    <SiTypescript
+                      className={`${styles.skillIcon} ${styles.tsIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
                   skill="Material UI"
                   icon={
                     <SiMaterialui
@@ -177,6 +191,26 @@ export function Skills() {
                   icon={
                     <SiChakraui
                       className={`${styles.skillIcon} ${styles.chakraIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  skill="Sematic UI"
+                  icon={
+                    <SiSemanticuireact
+                      className={`${styles.skillIcon} ${styles.chakraIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  skill="Bootstrap"
+                  icon={
+                    <SiBootstrap
+                      className={`${styles.skillIcon} ${styles.bootstrapIcon}`}
                     />
                   }
                 />
@@ -277,6 +311,39 @@ export function Skills() {
               <GridItem data-aos="flip-left">
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Bit Bucket"
+                  icon={
+                    <FaBitbucket
+                      className={`${styles.skillIcon} ${styles.Bitbucket}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Jira"
+                  icon={
+                    <FaJira
+                      className={`${styles.skillIcon} ${styles.jira}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Trello"
+                  icon={
+                    <FaTrello
+                      className={`${styles.skillIcon} ${styles.trello}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Next.js"
                   icon={
                     <SiNextdotjs
@@ -346,6 +413,16 @@ export function Skills() {
               </GridItem>
               <GridItem data-aos="flip-left">
                 <SkillCard
+                  skill="TypeScript"
+                  icon={
+                    <SiTypescript
+                      className={`${styles.skillIcon} ${styles.tsIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Next.js"
                   icon={
@@ -402,6 +479,26 @@ export function Skills() {
                   icon={
                     <SiChakraui
                       className={`${styles.skillIcon} ${styles.chakraIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  skill="Sematic UI"
+                  icon={
+                    <SiSemanticuireact
+                      className={`${styles.skillIcon} ${styles.chakraIcon}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  skill="Bootstrap"
+                  icon={
+                    <SiBootstrap
+                      className={`${styles.skillIcon} ${styles.bootstrapIcon}`}
                     />
                   }
                 />
@@ -568,6 +665,39 @@ export function Skills() {
                   }
                 />
               </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Bit Bucket"
+                  icon={
+                    <FaBitbucket
+                      className={`${styles.skillIcon} ${styles.Bitbucket}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Jira"
+                  icon={
+                    <FaJira
+                      className={`${styles.skillIcon} ${styles.jira}`}
+                    />
+                  }
+                />
+              </GridItem>
+              <GridItem data-aos="flip-left">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Trello"
+                  icon={
+                    <FaTrello
+                      className={`${styles.skillIcon} ${styles.trello}`}
+                    />
+                  }
+                />
+              </GridItem>
             </Grid>
           </TabPanel>
         </TabPanels>
@@ -576,106 +706,3 @@ export function Skills() {
   );
 }
 
-
-
-{/* <br />
-            <br />
-            <Flex align={"center"} justify={"center"} pt={"40px"}>
-              <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-                <Text
-                  as={"span"}
-                  position={"relative"}
-                  color={"white"}
-                  _after={{
-                    content: "''",
-                    width: "100%",
-                    height: useBreakpointValue({ base: "20%", md: "20%" }),
-                    position: "absolute",
-                    bottom: 1,
-                    left: 0,
-                    color: "blue",
-                    bgGradient: "linear(to-r,cyan.400,blue.500,purple.600)",
-                    xIndex: 1,
-                    opacity: "50%",
-                  }}
-                >
-                  Soft Skills
-                </Text>
-              </Heading>
-            </Flex>
-            <br />
-            <br />
-            <Grid
-              gridTemplateColumns={{
-                lg: "repeat(6,1fr)",
-                md: "repeat(4,1fr)",
-                sm: "repeat(2,1fr)",
-              }}
-            >
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
-                  skill="Leadership"
-                  icon={
-                    <RiTeamFill
-                      className={`${styles.skillIcon} ${styles.leaderIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-                  skill="Teamwork"
-                  icon={
-                    <GiTeamUpgrade
-                      className={`${styles.skillIcon} ${styles.teamIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(233, 98, 40, 0.4) 0px 10px 20px 4px"}
-                  skill="Connections"
-                  icon={
-                    <MdConnectWithoutContact
-                      className={`${styles.skillIcon} ${styles.htmlIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(255, 0, 0, 0.4) 0px 10px 20px 4px"}
-                  skill="Problem-solving"
-                  icon={
-                    <MdReportProblem
-                      className={`${styles.skillIcon} ${styles.problemIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
-                  skill="Time Manegement"
-                  icon={
-                    <FaBusinessTime
-                      className={`${styles.skillIcon} ${styles.leaderIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-              <GridItem>
-                <SkillCard
-                  hover={"rgba(233, 98, 40, 0.4) 0px 10px 20px 4px"}
-                  skill="Decision-making"
-                  icon={
-                    <BsQuestionCircleFill
-                      className={`${styles.skillIcon} ${styles.htmlIcon}`}
-                    />
-                  }
-                />
-              </GridItem>
-            </Grid> */}

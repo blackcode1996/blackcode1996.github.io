@@ -1,8 +1,11 @@
 #root{
     /* font-family: 'Nova Oval', cursive; */
-    /* font-family:'Aboreto', cursive */
-    font-family: 'Philosopher', sans-serif;
-    cursor:url()
+    /* font-family:'Aboreto', cursive; */
+    /* font-family: 'Philosopher', sans-serif; */
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Grenze Gotisch', serif;
+    cursor:url('../public/cursor.png'), auto;
 }
 
 button:hover{

@@ -12,9 +12,13 @@ import {
 import React from "react";
 import wavinghand from "../Aseests/wavinghand.gif";
 import resume from "../Aseests/Aakash_Mukherjee_Resume.pdf";
-import { animations, motion } from "framer-motion";
+// import { animations, motion } from "framer-motion";
 import ParticleBackground from "../ParticleBackground";
+import { Typewriter } from 'react-simple-typewriter';
+// import { IoRocket } from "react-icons/io5";
+import rocketImage from "../Aseests/rocket.gif";
 import "./Home.css";
+
 
 export const Home = () => {
   const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
@@ -22,7 +26,7 @@ export const Home = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "fp06_348_Aakash_Mukherjee_Resume";
+    link.download = "Aakash_Mukherjee_Resume";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,23 +35,26 @@ export const Home = () => {
   return (
     <Box
       maxW={"100%"}
+      justifyContent={'center'}
+      alignItems={'center'}
       id="Home"
       maxH={"100vh"}
-      mt={{ base: "50px", lg: "0px", md: "50px" }}
+      mt={{ base: "50px", lg: "50px", md: "60px" }}
     >
       <Stack
+        padding={'auto'}
         zIndex={1}
         position={"relative"}
         ml={{ base: "-19px", lg: "100px" }}
-        minH={{ base: "20vh", md: "vh", lg: "85vh" }}
+        minH={{ base: "20vh", lg: "90vh" }}
         direction={{ base: "column", md: "row" }}
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-          >
+          > */}
             <Stack
               spacing={7}
               w={"full"}
@@ -65,9 +72,10 @@ export const Home = () => {
                     color={"#fff"}
                     fontSize="5xl"
                     fontWeight="semibold"
-                    fontFamily={"`Philosopher', sans-serif"}
+                    fontFamily={"sans-serif"}
+                    // fontFamily={"`Philosopher', sans-serif"}
                   >
-                    Hi, I am
+                    Hey, I am
                   </Text>
                   <Image
                     src={wavinghand}
@@ -76,16 +84,19 @@ export const Home = () => {
                   ></Image>
                 </Flex>
                 <Flex
-                  fontFamily={"Philosopher"}
+                  // fontFamily={"Philosopher"}
                   fontSize="6xl"
                   fontWeight="bold"
                   bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
                   bgClip="text"
+                  fontFamily={"Grenze Gotisch"}
                 >
                   Aakash Mukherjee
                 </Flex>
                 <Text
-                  fontFamily={"Philosopher"}
+                fontFamily={"sans-serif"}
+                  // fontFamily={"Grenze Gotisch"}
+                  // fontFamily={"Philosopher"}
                   as={"span"}
                   position={"relative"}
                   color={"white"}
@@ -102,7 +113,8 @@ export const Home = () => {
                     opacity: "50%",
                   }}
                 >
-                  Full Stack MERN Developer
+                  {/* Full Stack MERN Developer */}
+                  <Typewriter loop={true} words={['MERN stack Developer.', 'React Developer.', 'node Developer.']}/>
                 </Text>
                 <br />{" "}
               </Heading>
@@ -115,19 +127,26 @@ export const Home = () => {
                 data-aos-duration="2000"
               >
                 <Button
+                justifyContent={"center"}
+                alignItems={"center"}
+                  // leftIcon={<IoRocket color="yellow" />}
                   rounded={"full"}
                   bg={"blue.400"}
+                  fontSize={'20px'}
                   color={"white"}
+                  pl={"35px"}
+                  pr={"40px"}
                   onClick={handleDownload}
                   _hover={{
-                    bg: "blue.500",
+                    bg: "blue.600",
                   }}
                 >
-                  Download Resume
+                  <span><Image src={rocketImage} height={"40px"} w={"40px"}></Image></span>
+                  Hire Me 
                 </Button>
               </Stack>
             </Stack>
-          </motion.div>
+          {/* </motion.div> */}
         </Flex>
         <Flex flex={1} align={"center"} justifyContent={"center"}  className="box">
           <Box 
@@ -152,8 +171,8 @@ export const Home = () => {
               boxSize={isNotSmallerScreen ? "100px" : "500px"}
               src="https://avatars.githubusercontent.com/u/110044436?v=4"
             />
-             <h2>Aakash Mukherjee<br/><span>MERN Developer</span></h2>
-            <a href="">Hire me</a>
+             {/* <h2>Aakash Mukherjee<br/><span>MERN Developer</span></h2>
+            <a href="">Hire me</a> */}
           </Box>
         </Flex>
       </Stack>
