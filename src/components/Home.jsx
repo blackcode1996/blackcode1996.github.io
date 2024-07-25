@@ -39,8 +39,7 @@ export const Home = () => {
       alignItems={'center'}
       id="Home"
       maxH={"100vh"}
-      mt={{ base: "40px", lg: "40px", md: "40px" }}
-      border={"10px solid red"}
+      mt={{ base: "70px", lg: "40px", md: "70px" }}
     >
       <Stack
         padding={'auto'}
@@ -51,7 +50,7 @@ export const Home = () => {
         minH={{ base: "20vh", lg: "90vh" }}
         direction={{ base: "column", md: "row" }}
       >
-        <Flex flex={1} align={"center"} justifyContent={"center"} className="box">
+        <Flex flex={1} p={"5"} align={"center"} justifyContent={"center"} className="box">
           {/* <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
