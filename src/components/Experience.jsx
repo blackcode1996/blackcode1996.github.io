@@ -446,14 +446,9 @@ const Experience = () => {
                 </ListItem>
                 <ListItem fontSize={"15px"}>
                   <ListIcon as={MdCheckCircle} color={"blueviolet"} />
-                  Created and deployed user interfaces that provide an intuitive
-                  and engaging experience.
-                </ListItem>
-                <ListItem fontSize={"15px"}>
-                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
                   Created and deployed {" "}
                   <a
-                    href="https://crm.tracknerd.io/"
+                    href="https://purecode.ai/"
                     target="_blank"
                     style={{ color: "red" }}
                   >
@@ -535,6 +530,15 @@ const Experience = () => {
                   color={"cyan"}
                 >
                   Shadcn
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Cypress
                 </Badge>
               </HStack>
             </VStack>
