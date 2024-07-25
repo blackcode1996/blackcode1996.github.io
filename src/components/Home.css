@@ -1,0 +1,17 @@
+@keyframes glowing {
+  0% {
+    background-color: #1c87c9;
+    box-shadow: 0 0 5px #1c87c9;
+  }
+  50% {
+    background-color: #1c87c9;
+    box-shadow: 0 0 20px #1c87c9;
+  }
+  100% {
+    background-color: #1c87c9;
+    box-shadow: 0 0 5px #1c87c9;
+  }
+}
+.button {
+  animation: glowing 1300ms infinite;
+}

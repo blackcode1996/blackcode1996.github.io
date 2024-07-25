@@ -23,8 +23,15 @@ import {
   SiSemanticuireact,
   SiBootstrap,
   SiTypescript,
+  SiCypress,
 } from "react-icons/si";
-import { FaBitbucket, FaGitAlt, FaGithub, FaJira, FaTrello } from "react-icons/fa";
+import {
+  FaBitbucket,
+  FaGitAlt,
+  FaGithub,
+  FaJira,
+  FaTrello,
+} from "react-icons/fa";
 // import { RiTeamFill } from "react-icons/ri";
 // import { GiTeamUpgrade } from "react-icons/gi";
 // import { MdConnectWithoutContact, MdReportProblem } from "react-icons/md";
@@ -46,7 +53,14 @@ import {
 
 export function Skills() {
   return (
-    <Container zIndex={1} h={"100%"} position={"relative"} maxH={"100%"} id="Skills" maxW={"90%"} >
+    <Container
+      zIndex={1}
+      h={"100%"}
+      position={"relative"}
+      maxH={"100%"}
+      id="Skills"
+      maxW={"90%"}
+    >
       <Heading
         pt={"50px"}
         data-aos="fade-down"
@@ -81,16 +95,57 @@ export function Skills() {
         justify={"center"}
         variant="soft-rounded"
         colorScheme="blue"
-        
       >
-        <TabList fontFamily={"'Nova Oval', cursive;"} m={"auto"} justifyContent={"space-evenly"} gap={"10px"} fontSize={{base:"5px"}}>
-          <Tab data-aos="flip-left" color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>All</Tab>
-          <Tab data-aos="flip-left" color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>Frontend</Tab>
-          <Tab data-aos="flip-right" color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>Backend</Tab>
-          <Tab data-aos="flip-right" color={"white"} bgGradient= "linear(to-r,cyan.400,blue.500,purple.600)" fontSize={{base:"10px",md:"15px",lg:"15px"}} width={{lg:"100px",base:"70px"}} height={{lg:"100px",base:"70px"}}>Tools</Tab>
+        <TabList
+          fontFamily={"'Nova Oval', cursive;"}
+          m={"auto"}
+          justifyContent={"space-evenly"}
+          gap={"10px"}
+          fontSize={{ base: "5px" }}
+        >
+          <Tab
+            data-aos="flip-left"
+            color={"white"}
+            bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+            fontSize={{ base: "10px", md: "15px", lg: "15px" }}
+            width={{ lg: "100px", base: "70px" }}
+            height={{ lg: "100px", base: "70px" }}
+          >
+            All
+          </Tab>
+          <Tab
+            data-aos="flip-left"
+            color={"white"}
+            bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+            fontSize={{ base: "10px", md: "15px", lg: "15px" }}
+            width={{ lg: "100px", base: "70px" }}
+            height={{ lg: "100px", base: "70px" }}
+          >
+            Frontend
+          </Tab>
+          <Tab
+            data-aos="flip-right"
+            color={"white"}
+            bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+            fontSize={{ base: "10px", md: "15px", lg: "15px" }}
+            width={{ lg: "100px", base: "70px" }}
+            height={{ lg: "100px", base: "70px" }}
+          >
+            Backend
+          </Tab>
+          <Tab
+            data-aos="flip-right"
+            color={"white"}
+            bgGradient="linear(to-r,cyan.400,blue.500,purple.600)"
+            fontSize={{ base: "10px", md: "15px", lg: "15px" }}
+            width={{ lg: "100px", base: "70px" }}
+            height={{ lg: "100px", base: "70px" }}
+          >
+            Tools
+          </Tab>
         </TabList>
         <TabPanels>
-          <TabPanel >
+          <TabPanel>
             <Grid
               w={"90%"}
               alignContent={"center"}
@@ -103,7 +158,6 @@ export function Skills() {
                 base: "repeat(2,1fr)",
               }}
               gridTemplateRows={"auto"}
-              
             >
               <GridItem data-aos="flip-left">
                 <SkillCard
@@ -219,9 +273,16 @@ export function Skills() {
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Tailwind"
+                  icon={<SiTailwindcss className={`${styles.skillIcon}`} />}
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Cypress"
                   icon={
-                    <SiTailwindcss
-                      className={`${styles.skillIcon}`}
+                    <SiCypress
+                      className={`${styles.skillIcon} ${styles.CypressIcon}`}
                     />
                   }
                 />
@@ -300,7 +361,7 @@ export function Skills() {
               <GridItem data-aos="flip-left">
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-                  skill="Git"
+                  skill="Github"
                   icon={
                     <FaGithub
                       className={`${styles.skillIcon} ${styles.githubIcon}`}
@@ -324,9 +385,7 @@ export function Skills() {
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Jira"
                   icon={
-                    <FaJira
-                      className={`${styles.skillIcon} ${styles.jira}`}
-                    />
+                    <FaJira className={`${styles.skillIcon} ${styles.jira}`} />
                   }
                 />
               </GridItem>
@@ -356,17 +415,13 @@ export function Skills() {
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Prisma"
-                  icon={
-                    <SiPrisma
-                      className={`${styles.skillIcon}`}
-                    />
-                  }
+                  icon={<SiPrisma className={`${styles.skillIcon}`} />}
                 />
               </GridItem>
             </Grid>
           </TabPanel>
           <TabPanel>
-          <Grid
+            <Grid
               w={"80%"}
               alignContent={"center"}
               justifyContent={"center"}
@@ -507,9 +562,16 @@ export function Skills() {
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Tailwind"
+                  icon={<SiTailwindcss className={`${styles.skillIcon}`} />}
+                />
+              </GridItem>
+              <GridItem data-aos="flip-right">
+                <SkillCard
+                  hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+                  skill="Cypress"
                   icon={
-                    <SiTailwindcss
-                      className={`${styles.skillIcon}`}
+                    <SiCypress
+                      className={`${styles.skillIcon} ${styles.CypressIcon}`}
                     />
                   }
                 />
@@ -517,7 +579,7 @@ export function Skills() {
             </Grid>
           </TabPanel>
           <TabPanel>
-          <Grid
+            <Grid
               w={"80%"}
               alignContent={"center"}
               justifyContent={"center"}
@@ -566,11 +628,7 @@ export function Skills() {
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Prisma"
-                  icon={
-                    <SiPrisma
-                      className={`${styles.skillIcon}`}
-                    />
-                  }
+                  icon={<SiPrisma className={`${styles.skillIcon}`} />}
                 />
               </GridItem>
               <GridItem data-aos="flip-right">
@@ -598,7 +656,7 @@ export function Skills() {
             </Grid>
           </TabPanel>
           <TabPanel>
-          <Grid
+            <Grid
               w={"80%"}
               alignContent={"center"}
               justifyContent={"center"}
@@ -613,14 +671,14 @@ export function Skills() {
               <GridItem data-aos="flip-right">
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-                  skill="Git Alt"
+                  skill="Git"
                   icon={
                     <FaGitAlt
                       className={`${styles.skillIcon} ${styles.gitIcon}`}
                     />
                   }
                 />
-              </GridItem >
+              </GridItem>
               <GridItem data-aos="flip-right">
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
@@ -635,7 +693,7 @@ export function Skills() {
               <GridItem data-aos="flip-right">
                 <SkillCard
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-                  skill="Git"
+                  skill="Github"
                   icon={
                     <FaGithub
                       className={`${styles.skillIcon} ${styles.githubIcon}`}
@@ -681,9 +739,7 @@ export function Skills() {
                   hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
                   skill="Jira"
                   icon={
-                    <FaJira
-                      className={`${styles.skillIcon} ${styles.jira}`}
-                    />
+                    <FaJira className={`${styles.skillIcon} ${styles.jira}`} />
                   }
                 />
               </GridItem>
@@ -705,4 +761,3 @@ export function Skills() {
     </Container>
   );
 }
-

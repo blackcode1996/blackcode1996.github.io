@@ -5,6 +5,11 @@
   .reactIcon {
     color: rgb(94, 211, 243);
   }
+  .CypressIcon{
+    border-radius:50%;
+    background-color: black;
+    color: rgb(255, 253, 253);
+  }
   .reduxIcon{
     color: rgb(118, 76, 183);
   }

@@ -39,17 +39,19 @@ export const Home = () => {
       alignItems={'center'}
       id="Home"
       maxH={"100vh"}
-      mt={{ base: "50px", lg: "50px", md: "60px" }}
+      mt={{ base: "40px", lg: "40px", md: "40px" }}
+      border={"10px solid red"}
     >
       <Stack
         padding={'auto'}
+        margin={"auto"}
         zIndex={1}
         position={"relative"}
         ml={{ base: "-19px", lg: "100px" }}
         minH={{ base: "20vh", lg: "90vh" }}
         direction={{ base: "column", md: "row" }}
       >
-        <Flex p={8} flex={1} align={"center"} justify={"center"}>
+        <Flex flex={1} align={"center"} justifyContent={"center"} className="box">
           {/* <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -114,7 +116,7 @@ export const Home = () => {
                   }}
                 >
                   {/* Full Stack MERN Developer */}
-                  <Typewriter loop={true} words={['MERN stack Developer.', 'React Developer.', 'node Developer.']}/>
+                  <Typewriter loop={true} words={['MERN Developer.', 'React Developer.', 'Node J.S Developer.']}/>
                 </Text>
                 <br />{" "}
               </Heading>
@@ -127,6 +129,7 @@ export const Home = () => {
                 data-aos-duration="2000"
               >
                 <Button
+                className="button"
                 justifyContent={"center"}
                 alignItems={"center"}
                   // leftIcon={<IoRocket color="yellow" />}
@@ -134,14 +137,14 @@ export const Home = () => {
                   bg={"blue.400"}
                   fontSize={'20px'}
                   color={"white"}
-                  pl={"35px"}
-                  pr={"40px"}
+                  pl={"55px"}
+                  pr={"55px"}
                   onClick={handleDownload}
                   _hover={{
                     bg: "blue.600",
                   }}
                 >
-                  <span><Image src={rocketImage} height={"40px"} w={"40px"}></Image></span>
+                  <span style={{position:"absolute",marginLeft:"-120px"}}><Image src={rocketImage} height={"80px"} w={"80px"}></Image></span>
                   Hire Me 
                 </Button>
               </Stack>
