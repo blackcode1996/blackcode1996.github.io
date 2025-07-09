@@ -27,6 +27,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaBriefcase, FaHourglass } from "react-icons/fa";
 import Tracknerd_logo from "../Aseests/Tracknerd_Logo.png";
+import CimetSvg from "../Aseests/cimet.svg";
 import Freelancing_Logo from "../Aseests/Freelancing_Logo.png";
 import PureCode_Logo from "../Aseests/PureCode_Logo.png";
 
@@ -69,6 +70,183 @@ const Experience = () => {
       </Heading>
       <div style={{ marginTop: "20px", height: "80%" }}>
         <VerticalTimeline animate={"true"}>
+          <VerticalTimelineElement
+            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentArrowStyle={{
+              borderRight: "7px solid  rgb(33, 150, 243)",
+            }}
+            date="NOVEMBER 2024 - PRESENT"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<FaBriefcase />}
+          >
+            <Flex p={"10px"}>
+              <Heading
+                data-aos="fade-down"
+                margin={"auto"}
+                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                display={"flex"}
+                flexDir={"row"}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <Image src={CimetSvg} />
+                <Text
+                  m="auto"
+                  as={"span"}
+                  position={"relative"}
+                  color={"white"}
+                  fontFamily={"'Aboreto', cursive;"}
+                  _after={{
+                    content: "''",
+                    width: "100%",
+                    height: useBreakpointValue({ base: "10%", md: "30%" }),
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    color: "blue",
+                    bgGradient: "linear(to-r,#1b3c71,#c82c42)",
+                    xIndex: 1,
+                    opacity: "50%",
+                  }}
+                >
+                  CIMET Pvt Ltd.
+                </Text>
+              </Heading>
+            </Flex>
+            <Container textAlign={"left"} p={"0px"}>
+              <Heading
+                color={"#fff"}
+                size={"lg"}
+                // p="10px"
+                fontFamily={"inherit"}
+              >
+                Role: <span style={{ color: "#fff" }}>Full Stack Engineer</span>
+              </Heading>
+              <Heading
+                color={"#fff"}
+                size={"lg"}
+                // p="10px"
+                fontFamily={"inherit"}
+              >
+                Responsibilites:
+              </Heading>
+              <List spacing={1} color="white.100">
+                <ListItem fontSize={"15px"}>
+                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
+                  Developed scalable APIs and integrated third-party services
+                  for personalized insurance comparison.
+                </ListItem>
+                <ListItem fontSize={"15px"}>
+                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
+                  Optimized performance and SEO with Next.js and server-side
+                  rendering.
+                </ListItem>
+                <ListItem fontSize={"15px"}>
+                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
+                  Implemented secure auth and robust error handling for app
+                  stability.
+                </ListItem>
+                <ListItem fontSize={"15px"}>
+                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
+                  Reduced code smells by 25% using SonarQube and ESLint.
+                </ListItem>
+                <ListItem fontSize={"15px"}>
+                  <ListIcon as={MdCheckCircle} color={"blueviolet"} />
+                  Delivered a full product vertical with end-to-end API
+                  integration
+                </ListItem>
+              </List>
+            </Container>
+            <VStack p="10px" fontFamily={"sans-serif"}>
+              <HStack>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  JavaScript
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Next Js
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Remix Js
+                </Badge>
+              </HStack>
+              <HStack>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Redux
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  TypeScript
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Styled Component
+                </Badge>
+              </HStack>
+              <HStack>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Elastic Search
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Graph Ql
+                </Badge>
+                <Badge
+                  variant="subtle"
+                  colorScheme="white"
+                  p={"5px"}
+                  rounded={"5px"}
+                  color={"cyan"}
+                >
+                  Keystone Js
+                </Badge>
+              </HStack>
+            </VStack>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             contentArrowStyle={{
@@ -446,16 +624,15 @@ const Experience = () => {
                 </ListItem>
                 <ListItem fontSize={"15px"}>
                   <ListIcon as={MdCheckCircle} color={"blueviolet"} />
-                  Created and deployed {" "}
+                  Created and deployed{" "}
                   <a
                     href="https://purecode.ai/"
                     target="_blank"
                     style={{ color: "red" }}
                   >
-                  user interfaces
-                  </a> {" "} 
-                   that provide an intuitive
-                   and engaging experience.
+                    user interfaces
+                  </a>{" "}
+                  that provide an intuitive and engaging experience.
                 </ListItem>
                 {/* <ListItem fontSize={"15px"}>
                   <ListIcon as={MdCheckCircle} color={"blueviolet"}/>
